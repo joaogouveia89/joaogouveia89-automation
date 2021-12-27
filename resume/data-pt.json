@@ -1,0 +1,127 @@
+{
+    "header":{
+        "name": "João Lucas Veloso Gouveia",
+        "address": "Avenida Francisco Salgado Zenha, Lote 1, 7E - Lisboa - Portugal",
+        "phone": "+351 912 785 884",
+        "email": "j.lucas.gouveia@gmail.com",
+        "github": "joaogouveia89",
+        "skype": "joao.automacaomg",
+        "marital_status": "Casado",
+        "birthdate":"10/02/1989"
+    },
+    "body":{
+        "position_name": "Software Engineer",
+        "summary_description": "Engenheiro de software com experiência em desenvolvimento para Android nativo utilizando tanto kotlin quanto java, e com diversas bibliotecas comuns ao desenvolvimento para a plataforma. Tenho como hábito otimizar meu trabalho automatizando tarefas repetitivas do meu dia a dia, e utilizar um checklist pessoal para gerenciar minha própria lista de tarefas.",
+        "academic_formation": "Formação Acadêmica",
+        "professional_experience": "Experiência Profissional",
+        "summary": "Resumo da experiência",
+        "summary_other": "Outras experiências relevantes"
+    },
+    "academic_formation":[
+        {
+            "institution": "Udacity",
+            "start": "Maio 2021",
+            "end": "Setembro 2021",
+            "title": "C++ Nanodegree"
+        },
+        {
+            "institution": "Universidade Fumec",
+            "start": "Julho 2014",
+            "end": "Dezembro 2018",
+            "title": "Ciência da Computação"
+        },
+        {
+            "institution": "Pontifícia Universidade Católica - PUC - MG",
+            "start": "Julho 2009",
+            "end": "Junho 2014",
+            "title": "Engenharia de Controle e Automação",
+            "comments": "Interrompido para começar o curso de ciência da computação"
+        }
+    ],
+    "speak_languages":[
+        {
+            "icon": "resources/brazil.png",
+            "proeficience": "Primeira lingua"
+        },
+        {
+            "icon": "resources/united-states.png",
+            "proeficience": "Fluência em leitura, escrita e conversação"
+        },
+        {
+            "icon": "resources/spain.png",
+            "proeficience": "Compreensão de texto e conversação"
+        }
+    ],
+    "relevant_xps":[
+        "Android",
+        "Kotlin",
+        "Java",
+        "Git",
+        "MVVM",
+        "Ruby"
+    ],
+    "professional_experience":[
+        {
+            "role": "Instrutor de introdução digital",
+            "company": "Autônomo",
+            "start": "07-2009",
+            "end": "07-2017",
+            "description": "Aulas particulares de introdução digital a pessoas idosas. Nessas aulas abordei tópicos como uso de e-mail e mídias sociais (Instagram, Facebook, Gmail) e alguns hábitos de uso rotineiro como transferir fotos do smartphone para o PC, emparelhar o smartphone com outros dispositivos na casa do cliente e assim por diante"
+        },
+        {
+            "role": "Estágio de férias",
+            "company": "TCA",
+            "start": "06-2014",
+            "end": "07-2014",
+            "description": "Primeiro contato profissional com programação. Passou um mês trabalhando em um aplicativo para compartilhamento de arquivos entre os funcionários, dos projetos de engenharia, da empresa, levando em consideração privilégios e permissões de acesso",
+            "programming_languages": ["PHP"],
+            "stack": ["MySQL"]
+        },
+        {
+            "role": "Estágio",
+            "company": "GDAX Contact Center",
+            "start": "10-2014",
+            "end": "01-2015",
+            "description": "A GDAX é uma empresa de telemarketing e o aplicativo que trabalhei era para registro de vendas pela equipe que ligava para os clientes. Para esta aplicação foi usado um framework criado internamente escrito em PHP e usando um banco de dados MySQL, foi meu primeiro contato com versionamento de código usando SVN, e algumas habilidades de frontend",
+            "programming_languages": ["PHP"],
+            "stack": ["MySQL"]
+        },
+        {
+            "role": "Estágio",
+            "company": "Avenue Code",
+            "start": "01-2015",
+            "end": "10-2016",
+            "description": "Trabalhei no app ACDC que era um projeto para uso interno dos funcionários da empresa para controle de horas trabalhadas internamente. Foi meu primeiro contato com Ruby on Rails e PostgresSQL. Também tive contato com alguns recursos básicos de frontend como CSS e HTML, e Git para versionamento. Este projeto foi desafiador porque muitas pessoas em muitas filiais o estavam usando e tinham muitos problemas para resolver e implementar",
+            "programming_languages": ["Ruby"],
+            "stack": ["PostgreSQL", "Git", "Ruby on Rails"]
+        },
+        {
+            "role": "Android developer",
+            "company": "Life Link",
+            "start": "05-2017",
+            "end": "12-2017",
+            "description": "Trabalhei em um aplicativo Android escrito em Java, para se comunicar com um Hardware por Bluetooth 4.0. O aplicativo recebe as informações fornecidas pelo hardware e as envia a um servidor remoto por meio de uma API.",
+            "programming_languages": ["Java"],
+            "stack": ["Android", "Git", "Bluetooth LE"]
+        },
+        {
+            "role": "Android developer",
+            "company": "Ioasys",
+            "start": "04-2018",
+            "end": "01-2019",
+            "description": "Na maior parte do tempo, trabalhei em um aplicativo Android programado com Java, que usa MVVM, banco de dados Room e solicitações HTTP usando a biblioteca Retrofit para lidar com os dados. Algumas bibliotecas externas para lidar com animações e RecyclerView estavam sendo usadas e também RxJava para trabalhar com programação reativa. O aplicativo é uma interface entre os professores e a plataforma da livraria. Mas também trabalhei em alguns dos projetos menores da fábrica de software",
+            "programming_languages": ["Java"],
+            "stack": ["Android", "Git", "MVVM", "Room", "Retrofit", "RxJava", "Data Binding"]
+        },
+        {
+            "role": "Android engineer",
+            "company": "Critical Techworks",
+            "start": "05-2019",
+            "description": "Trabalhei em um aplicativo Android escrito em Kotlin, para lidar com operações de mídia usando o padrão MVVM e Git para controle de versão, neste projeto consumimos serviços externos como Spotify API, Apple Car play, trabalhei também com dados de mídia de armazenamento interno (USB) e sintonizador interface externa. Este projeto é apenas uma parte da plataforma para a futura geração de computadores de bordo BMW, por isso trabalhei ao lado de várias equipas em Portugal, Alemanha e China",
+            "programming_languages": ["Kotlin"],
+            "stack": ["Android", "Git", "MVVM", "Room", "Expresso", "Mockito", "Coroutines", "Live Data", "Media Session"]
+        }
+    ],
+    "current": "Atual",
+    "years_and_months": "%d anos e %d meses"
+}

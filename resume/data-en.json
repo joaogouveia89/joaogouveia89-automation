@@ -1,0 +1,126 @@
+{
+    "header":{
+        "name": "João Lucas Veloso Gouveia",
+        "address": "Francisco Salgado Zenha Avenue, Lote 1, 7E - Lisbon - Portugal",
+        "phone": "+351 912 785 884",
+        "email": "j.lucas.gouveia@gmail.com",
+        "github": "joaogouveia89",
+        "skype": "joao.automacaomg",
+        "marital_status": "Married",
+        "birthdate":"10/02/1989"
+    },
+    "body":{
+        "position_name": "Software Engineer",
+        "summary_description": "Software engineer with experience in native Android development using both kotlin and java, and with several common libraries for development for the platform. I have a habit of optimizing my work by automating repetitive daily tasks, and using a personal checklist to manage my own to-do list.",
+        "academic_formation": "Academic Formation",
+        "professional_experience": "Professional Experience",
+        "summary": "Experience summary",
+        "summary_other": "Other relevant experiences"
+    },
+    "academic_formation":[
+        {
+            "institution": "Udacity",
+            "start": "May 2021",
+            "end": "September 2021",
+            "title": "C++ Nanodegree"
+        },
+        {
+            "institution": "Universidade Fumec",
+            "start": "July 2014",
+            "end": "December 2018",
+            "title": "Bsc Computer Science"
+        },
+        {
+            "institution": "Pontifícia Universidade Católica - PUC - MG",
+            "start": "July 2009",
+            "end": "June 2014",
+            "title": "Automation and Control engineering",
+            "comments": "Interrupted to start computer science course"
+        }
+    ],
+    "speak_languages":[
+        {
+            "icon": "resources/brazil.png",
+            "proeficience": "First language"
+        },
+        {
+            "icon": "resources/united-states.png",
+            "proeficience": "Fluency in reading, writing and conversation"
+        },
+        {
+            "icon": "resources/spain.png",
+            "proeficience": "Text comprehension and conversation"
+        }
+    ],
+    "relevant_xps":[
+        "Android",
+        "Kotlin",
+        "Java",
+        "Git",
+        "MVVM"
+    ],
+    "professional_experience":[
+        {
+            "role": "Digital introduction instructor",
+            "company": "Autonomous",
+            "start": "07-2009",
+            "end": "07-2017",
+            "description": "Private classes to digital introduction to eldery people. In these classes I addressed topics like email and social medias usage(Instagram, Facebook, Gmail) and some routine usage habits like to transfer pictures from the smartphone to the PC, pair the smartphone to other devices on the client home and so on"
+        },
+        {
+            "role": "Vacation internship",
+            "company": "TCA",
+            "start": "06-2014",
+            "end": "07-2014",
+            "description": "Very first contact professionally with programming. Passed a month working on a application for file sharing between the employees, of the engineering projects, of the company, taking in consideration privileges and access permissions",
+            "programming_languages": ["PHP"],
+            "stack": ["MySQL"]
+        },
+        {
+            "role": "Internship",
+            "company": "GDAX Contact Center",
+            "start": "10-2014",
+            "end": "01-2015",
+            "description": "GDAX is a telemarketing company and the application I worked on was for sales recording by the team who call the clients. For this application iit was used a framework created internally wrote in PHP and using a MySQL database, it was my very first contact with Code versioning using SVN, and some frontend skills",
+            "programming_languages": ["PHP"],
+            "stack": ["MySQL"]
+        },
+        {
+            "role": "Internship",
+            "company": "Avenue Code",
+            "start": "01-2015",
+            "end": "10-2016",
+            "description": "Worked in ACDC app which was a project to use internally by the company employees to control their worked hours inside. It was my first contact with Ruby on Rails, and PostgresSQL. Also had contact with some frontend basic features like CSS and HTML, and Git for versioning. This project was challenging because so many people in many branches were using it, and had some many issues to solve and implement",
+            "programming_languages": ["Ruby"],
+            "stack": ["PostgreSQL", "Git", "Ruby on Rails"]
+        },
+        {
+            "role": "Android developer",
+            "company": "Life Link",
+            "start": "05-2017",
+            "end": "12-2017",
+            "description": "Worked on a Android application wrote in Java, to communicates with a Hardware by Bluetooth 4.0. The application receives the information provided by the hardware and send it to an remote server by an API.",
+            "programming_languages": ["Java"],
+            "stack": ["Android", "Git", "Bluetooth LE"]
+        },
+        {
+            "role": "Android developer",
+            "company": "Ioasys",
+            "start": "04-2018",
+            "end": "01-2019",
+            "description": "Most of the time, I worked in an Android application programmed with Java, which uses MVVM, Room database, and HTTP requests using Retrofit library to handle data. Some external libraries to handle animations and RecyclerView was being usage and also RxJava to work with reactive programming. The application is an interface between teachers and the bookstore platform. But also worked in some of smaller projects of the software factory",
+            "programming_languages": ["Java"],
+            "stack": ["Android", "Git", "MVVM", "Room", "Retrofit", "RxJava", "Data Binding"]
+        },
+        {
+            "role": "Android engineer",
+            "company": "Critical Techworks",
+            "start": "05-2019",
+            "description": "Worked in an Android application wrote in Kotlin, to handle Media operations using the MVVM pattern and Git for version control, in this project we consume external services like Spotify API, Apple Car play, also worked with internal storage media data(USB) and tuner external interface. This project is just a part of the platform for the future generation of BMW board computers, so I worked  alongside multiple teams in Portugal, Germany and China",
+            "programming_languages": ["Kotlin"],
+            "stack": ["Android", "Git", "MVVM", "Room", "Expresso", "Mockito", "Coroutines", "Live Data", "Media Session"]
+        }
+    ],
+    "current": "Current",
+    "years_and_months": "%d years and %d months"
+}
