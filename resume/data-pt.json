@@ -15,7 +15,8 @@
         "academic_formation": "Formação Acadêmica",
         "professional_experience": "Experiência Profissional",
         "summary": "Resumo da experiência",
-        "summary_other": "Outras experiências relevantes"
+        "summary_other": "Outras experiências relevantes",
+        "generated_on": "Gerado em "
     },
     "academic_formation":[
         {

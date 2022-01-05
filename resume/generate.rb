@@ -28,6 +28,7 @@ age =  now.year - birthdate.year - ((now.month > birthdate.month || (now.month =
 age_str = age.to_s + (datafile == "data-en.json" ? " years old" : " anos")
 
 Prawn::Document.generate("resume.pdf") do
+    text json_file["body"]["generated_on"] + now.year.to_s + "-" + ("%02d" % now.month).to_s + "-" + ("%02d" % now.day).to_s, align: :right, size: 8
     image "resources/joao.png", scale: 0.07
     text json_file["header"]["name"].upcase, align: :center, size: 20, style: :bold
     text "\n"
