@@ -1,7 +1,18 @@
 #!/bin/bash
+# Author: Joao Gouveia
+# Date Created: 01-16-2022
+# Description: Download and install Android Studio
+# Date modified: 01-16-2022
 
+# Constants
+DESKTOP_FILE="/usr/share/applications/android-studio.desktop"
+ASPATH=/opt
 
-[ "$UID" -eq 0 ] || exec sudo "$0" "$@" #asking for root permissions in order to create desktop file
+#ask for root permissions
+[ "$UID" -eq 0 ] || exec sudo "$0" "$@" 
+
+# https://dl.google.com/dl/android/studio/ide-zips/2020.3.1.26/android-studio-2020.3.1.26-linux.tar.gz
+# https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2020.3.1.26/android-studio-2020.3.1.26-linux.tar.gz
 
 echo "Enter Android Studio URL"
 read downloadurl
@@ -9,8 +20,6 @@ clear
 aslink=https://dl.google.com/dl
 echo "Downloading Android Studio..."
 
-# https://dl.google.com/dl/android/studio/ide-zips/2020.3.1.26/android-studio-2020.3.1.26-linux.tar.gz
-# https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2020.3.1.26/android-studio-2020.3.1.26-linux.tar.gz
 
 spplitted=(${downloadurl//edgedl/ })
 
@@ -26,9 +35,6 @@ then
   rm as.tar.gz
   exit
 fi
-
-DESKTOP_FILE="/usr/share/applications/android-studio.desktop"
-ASPATH=/opt
 
 echo "Extracting...."
 
