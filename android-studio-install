@@ -1,0 +1,56 @@
+#!/bin/bash
+
+
+[ "$UID" -eq 0 ] || exec sudo "$0" "$@" #asking for root permissions in order to create desktop file
+
+echo "Enter Android Studio URL"
+read downloadurl
+clear
+aslink=https://dl.google.com/dl
+echo "Downloading Android Studio..."
+
+# https://dl.google.com/dl/android/studio/ide-zips/2020.3.1.26/android-studio-2020.3.1.26-linux.tar.gz
+# https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2020.3.1.26/android-studio-2020.3.1.26-linux.tar.gz
+
+spplitted=(${downloadurl//edgedl/ })
+
+aslink+=${spplitted[1]}
+
+as_download_response=$(curl $aslink --output as.tar.gz --progress-bar -w '\n%{http_code}')
+
+as_download_response=(${as_download_response[@]}) # convert to array
+code=${as_download_response[-1]} # get last element (last line)
+if [ $code -ne 200 ]
+then
+  echo "Android Studio invalid tar.gz file, check in Google website for the correct URL"
+  rm as.tar.gz
+  exit
+fi
+
+DESKTOP_FILE="/usr/share/applications/android-studio.desktop"
+ASPATH=/opt
+
+echo "Extracting...."
+
+tar -xf as.tar.gz -C $ASPATH
+
+rm as.tar.gz
+
+echo "Creating Desktop file..."
+
+if [ -e $DESKTOP_FILE ]; then
+    echo -n "" > $DESKTOP_FILE
+fi
+
+echo "[Desktop Entry]" >> $DESKTOP_FILE
+echo "Version=1.0" >> $DESKTOP_FILE
+echo "Name=Android Studio" >> $DESKTOP_FILE
+echo "Comment=Android IDE" >> $DESKTOP_FILE
+echo "Exec=$ASPATH/android-studio/bin/studio.sh" >> $DESKTOP_FILE
+echo "Path=$ASPATH/android-studio" >> $DESKTOP_FILE
+echo "Icon=$ASPATH/android-studio/bin/studio.svg" >> $DESKTOP_FILE
+echo "Terminal=false" >> $DESKTOP_FILE
+echo "Type=Application" >> $DESKTOP_FILE
+echo "Categories=Development;" >> $DESKTOP_FILE
+
+echo "Done"
