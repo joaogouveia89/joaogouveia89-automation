@@ -1,0 +1,47 @@
+#!/bin/bash
+# Author: Joao Gouveia
+# Date Created: 01-16-2022
+# Description: Create a CPP project
+# Date modified: 01-16-2022
+
+if [ "$#" -ne 1 ]; then
+    echo "I can generate a boilerplate for CMake project for you(for now only C++17). Just go to the wish project container folder and call me with the project name. Ex: cppnew hello_world"
+    exit
+fi
+project_path=$PWD"/"$1
+build_folder_path=$project_path"/build"
+src_folder_path=$project_path"/src"
+cmake_lists_file=$project_path"/CMakeLists.txt"
+main_file=$src_folder_path"/main.cpp"
+
+mkdir $project_path
+mkdir $build_folder_path
+mkdir $src_folder_path
+
+touch $cmake_lists_file
+echo "cmake_minimum_required(VERSION 3.11.3)" >> $cmake_lists_file
+echo >> $cmake_lists_file
+echo "project("$1")" >> $cmake_lists_file
+echo >> $cmake_lists_file
+echo "find_package(PkgConfig REQUIRED)" >> $cmake_lists_file
+echo >> $cmake_lists_file
+echo "find_package(Threads REQUIRED)" >> $cmake_lists_file
+echo >> $cmake_lists_file
+echo "set(CMAKE_CXX_STANDARD 17)" >> $cmake_lists_file
+echo >> $cmake_lists_file
+echo 'set (CMAKE_BUILD_TYPE "Debug")' >> $cmake_lists_file
+echo >> $cmake_lists_file
+echo 'file(GLOB project_SRCS src/*.cpp)' >> $cmake_lists_file
+echo >> $cmake_lists_file
+echo 'add_executable('$1' ${project_SRCS})' >> $cmake_lists_file
+echo >> $cmake_lists_file
+echo 'target_link_libraries('$1' PRIVATE ${CMAKE_THREAD_LIBS_INIT} )' >> $cmake_lists_file
+
+echo -e "#include<iostream>" >> $main_file
+echo -e "int main(int argc, char *argv[]) {" >> $main_file
+echo >> $main_file
+echo -e "\tstd::cout << \"Hello World\" << std::endl;"  >> $main_file
+echo >> $main_file
+echo -e  "\treturn 0;" >> $main_file
+echo >> $main_file
+echo -e "}" >> $main_file
