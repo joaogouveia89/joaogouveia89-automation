@@ -1,0 +1,15 @@
+#!/bin/bash
+# Author: Joao Gouveia
+# Date Created: 01-16-2022
+# Description: Remove debugs log printers from code
+# Date modified: 01-16-2022BASH
+
+
+script_name=`basename "$0"`
+for file in $(find . -type f -print)
+do
+    # ignoring this file and any file inside .git folder
+    if ! [[ -f $file && "$file" =~ .*"$script_name".* || "$file" =~ .*\.git.* ]]; then
+        sed -i '/JOAODEBUG/d' $file
+    fi
+done
