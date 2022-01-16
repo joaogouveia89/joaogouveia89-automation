@@ -1,7 +1,7 @@
 #!/bin/bash
 # Author: Joao Gouveia
 # Date Created: 01-16-2022
-# Description: Remove debugs log printers from code
+# Description: Delete already merged branches, referencing master
 # Date modified: 01-16-2022BASH
 
 git branch --merged master | grep -v "^\* master" | xargs -n 1 -r git branch -d
